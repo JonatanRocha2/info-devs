@@ -18,12 +18,7 @@ header#navbar form, input, ul, li{
     display: flex;
 }
 
-#navbar form {
 
-}
-#navbar input{
-
-}
 #navbar ul{
     margin-top: 22px;
 }
