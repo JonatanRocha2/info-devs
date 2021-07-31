@@ -1,0 +1,32 @@
+body, h2, input, textarea {
+    margin: 0;
+    font-family: Roboto;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+header#navbar {
+    background-color: black;
+    color: white;
+    padding: 0 15px;
+    height: 60px;
+}
+
+header#navbar form, input, ul, li{
+    display: flex;
+}
+
+#navbar form {
+
+}
+#navbar input{
+
+}
+#navbar ul{
+    margin-top: 22px;
+}
+#navbar li{
+    margin-top: 0 10px;
+}
