@@ -1,27 +1,190 @@
-body, h2, input, textarea {
-    margin: 0;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
     font-family: Roboto;
 }
 
-h2 {
-    font-size: 30px;
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
 }
 
-header#navbar {
+/*cabecalho*/
+
+header {
+    width: 100%;
+    height: 80px;
+}
+
+#container-header {
     background-color: black;
     color: white;
-    padding: 0 15px;
-    height: 60px;
-}
-
-header#navbar form, input, ul, li{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 100%;
     display: flex;
+    width: 100%;
+
 }
 
-
-#navbar ul{
-    margin-top: 22px;
+#container-header .logo-buscar {
+    display: flex;
+    margin-left: 4px;
+    margin-right: 10px;
+    font-size: 30px;
+    width: 500px;
+    justify-content: space-around;
 }
-#navbar li{
-    margin-top: 0 10px;
+
+.input {
+    width: 300px;
+    padding-right: 120px;
+    text-align: center;
+
+}
+
+.buscar {
+    width: 30px;
+
+
+}
+
+#container-header a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding: 90px;
+    margin-left: 60px;
+
+}
+
+.menu-cabecalho {
+    display: inline-block;
+    display: block;
+    color: #FFFFFF;
+
+
+}
+
+/*section*/
+
+body {
+    height: 800px;
+}
+
+.produtos-pai {
+    width: 130px;
+    height: 60px;
+    line-height: 40px;
+    text-align: left;
+    display: flex;
+    font-size: 22px;
+    color: black;
+    margin-top: 45px;
+}
+
+.container-list {
+    margin-right: 20%;
+    margin-left: 0%;
+
+}
+
+.container-produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.container-produtosum {
+    flex: 1 1 30px;
+    margin-left: 60px;
+    margin-right: 25px;
+    background-size: cover;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    padding: 22px;
+    margin-left: 95px;
+
+
+
+}
+
+.container-produtosum img {
+    height: 120px;
+    width: 200px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+/*rodape*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 28px;
+    background-color: black;
+    color: seashell;
+    text-align: center;
+    padding: 8px;
+    margin: 0;
+    align-items: center;
+    margin-top: 8px;
+    height: 295px;
+}
+
+footer input,
+footer textarea {
+    border: none;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    width: 50%;
+    display: block;
+    margin-left: 110px;
+    text-align: center;
+}
+.button-atendimento {
+    text-decoration: none;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+#button-atendimento {
+    position: fixed;
+    bottom: 30px;
+    right: 70px;
+    border-radius: 40px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#atendimentoDois {
+    display: inline-block;
+    text-align: center;
+}
+
+footer form {
+    width: 100%;
+}
+
+footer .detail {
+    margin-top: 10px;
+    display: block;
 }

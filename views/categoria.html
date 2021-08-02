@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,70 +9,100 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>InfoDevs</title>
 </head>
-<body>
-    
 
 
-    <header id="navbar">
-        <!--img logo-->
-        <h2>InfoDevs</h2>
-        <nav>
-            <form action="" method="">
-                <input type="text" name="name" placeholder="Digite seu Produto">
-                <input type="submit" value="Buscar">
-            </form>
-            <ul id="navbar-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Categoria</a></li>
-                <li><a href="#">DetalhesDoProduto</a></li>
+
+
+
+<header>
+    <div id="container-header">
+        <div class="logo-buscar">
+            <h2>InfoDevs</h2>
+        </div>
+        <div class="digite-seu-produto">
+            <input type="text" name="name" placeholder="Digite seu Produto">
+        </div>
+        <div class="buscar">
+            <input type="submit" value="Buscar">
+        </div>
+
+        <div class="cabecalho">
+            <ul class="munu-cabecalho">
+                <a href="#">Home</a>
+                <a href="#">Categoria</a>
+                <a href="#">Detalhes Do Produto</a>
             </ul>
-        </nav>
-    </header>
-
-
-
-
-<section id="categorias">
-    <div class="container-lista">
-        <ul class="list">
-            <li>Produtos</li>
-            <li><a href="#">Cabos e Conectores</a></li>
-            <li><a href="#">Celular e Smartphone</a></li>
-            <li><a href="#">Computadores</a></li>
-            <li><a href="#">Eletrônicos</a></li>
-            <li><a href="#">Impressoras</a></li>
-            <li><a href="#">Monitor</a></li>
-            <li><a href="#">Notebbok</a></li>
-        </ul>
-
+        </div>
     </div>
-
-    <div class="container-produtos">
-
-    </div>
+</header>
 
 
+<body>
+    <section id="categorias">
+        <div class="produtos-pai">
+            <div class="container-lista">
+                <ul class="menu">
+                    <a href="#">Categoria</a>
+                    <a href="#">Conector</a>
+                    <a href="#">Smartphone</a>
+                    <a href="#">Computador</a>
+                    <a href="#">Impressora</a>
+                    <a href="#">Monitor</a>
+                </ul>
+            </div>
 
-</section>
+
+            <div class="container-produtosum">
+                <a href="container-produtosum cabo1"><img src="/img/cabo1.jpg" alt="Conector"></a>
+                <a href="container-produtosum cabo2"><img src="/img/cabo2.jpg" alt="Conector"></a>
+                <a href="container-produtosum cabo3"><img src="/img/cabo3.jpg" alt="Conector"></a>
+            </div>
+            <div class="container-produtosum">
+                <a href="container-produtosum celular1"><img src="/img/celular1.jpg" alt="Celular"></a>
+                <a href="container-produtosum celular2"><img src="/img/celular2.jpg" alt="Celular"></a>
+                <a href="container-produtosum celular3"><img src="/img/celular3.jpg" alt="Celular"></a>
+            </div>
+            <div class="container-produtosum">
+                <a href="container-produtosum impressora1"><img src="/img/impressora1.jpg" alt="Impressora"></a>
+                <a href="container-produtosum impressora2"><img src="/img/impressora2.jpg" alt="Impressora"></a>
+                <a href="container-produtosum impressora3"><img src="/img/impressora3.jpg" alt="Impressora"></a>
+            </div>
+            <div class="container-produtosum">
+                <a href="container-produtosum monitor1"><img src="/img/monitor1.jpg" alt="Monitor"></a>
+                <a href="container-produtosum monitor2"><img src="/img/monitor2.jpg" alt="Monitor"></a>
+                <a href="container-produtosum monitor3"><img src="/img/monitor3.jpg" alt="Monitor"></a>
+            </div>
+            <div class="container-produtosum">
+                <a href="container-produtosum notebook1"><img src="/img/notebook1.jpg" alt="Notebook"></a>
+                <a href="container-produtosum notebook2"><img src="/img/notebook2.jpg" alt="Notebook"></a>
+                <a href="container-produtosum notebook3"><img src="/img/notebook3.jpg" alt="Notebook"></a>
+            </div>
+        </div>
 
 
-
-
-
-    <footer>
-        <h2>Entre em Contato Conosco</h2>
-        <p>Caso tenha uma Dúvida</p>
-        <!--img src="img.png" alt="perfil"-->
-        <form action="" method="">
-            <input type="text" name="name" placeholder="seu nome">
-            <input type="email" name="email" placeholder="seu email">
-            <textarea name="msg" placeholder="Digite uma mensagem">
-            </textarea>
-            <input type="submit" value="Enviar">
-        </form>
-        <p>Site desenvolvido por <span class="detail">Alisson Souza, Bruna Martins, Carlos Malvaso e Jonatan Ivan</span></p>
-    </footer>
-
+    </section>
 
 </body>
+<footer>
+    <div id="atendimento">
+        <a id="button-atendimento" href="/contato">
+            <button class="button-atendimento">Chat</button>
+        </a>
+    </div>
+    <div id="atendimentoDois">
+        <h2>Entre em Contato Conosco</h2>
+        <p>Caso tenha Dúvida</p>
+        <input type="text" name="name" placeholder="Digite Seu Nome">
+        <input type="email" name="email" placeholder="Digite seu E-mail">
+        <textarea type="text" name="mensagem" placeholder="Digite uma mensagem">
+            </textarea>
+        <input type="submit" value="Enviar">
+        <p>Site desenvolvido por: <span class="detail">Alisson Souza, Bruna Martins, Carlos Malvaso e Jonatan
+                Ivan</span>
+        </p>
+    </div>
+</footer>
+
+
+
 </html>
