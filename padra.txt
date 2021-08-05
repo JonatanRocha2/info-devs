@@ -1,0 +1,4 @@
+Fonte: Roboto
+Background color em header e footer: Black
+color: Black e White
+imagens: unsplash

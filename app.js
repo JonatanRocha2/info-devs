@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.static('public'));
 
-app.get('/categoria', (req, res) => {
+app.get('/categoria', (req, res)=>{
     res.sendFile(__dirname + "/views/categoria.html");
 });
 app.get('/conectores', (req, res) => {
