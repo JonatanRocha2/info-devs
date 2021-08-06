@@ -1,4 +1,5 @@
 * {
+<<<<<<< HEAD
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -188,3 +189,9 @@ footer .detail {
     margin-top: 10px;
     display: block;
 }
+=======
+    padding: 0;
+    margin: 0;
+}
+
+>>>>>>> f768026b76629159a9efd98208782abecbb6cb7a
