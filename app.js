@@ -24,3 +24,7 @@ app.get('/impressora', (req, res) => {
 app.get('/monitor', (req, res) => {
     res.sendFile(__dirname + "/src/views/monitor.html");
 });
+app.get('/home', (req, res) => {
+    res.sendFile(__dirname + "/views/home.html");
+});
+app.listen(3000, () => console.log("Bem-vindos a InfoDevs"));
