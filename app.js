@@ -1,27 +1,17 @@
-const express = require('express');
+const express = require("express");
+const path = require("path");
+const rotas = require("./routes/index");
+
 const app = express();
+
+app.set("view engine", "ejs");
+app.set("views", path.resolve("views"));
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 app.use(express.static('public'));
 
-app.get('/categoria', (req, res)=>{
-    res.sendFile(__dirname + "/views/categoria.html");
-});
-app.get('/conectores', (req, res) => {
-    res.sendFile(__dirname + "/views/conectores.html");
-});
-app.get('/smartphone', (req, res) => {
-    res.sendFile(__dirname + "/views/smartphone.html");
-});
-app.get('/computador', (req, res) => {
-    res.sendFile(__dirname + "/views/computador.html");
-});
-app.get('/impressora', (req, res) => {
-    res.sendFile(__dirname + "/views/impressora.html");
-});
-app.get('/monitor', (req, res) => {
-    res.sendFile(__dirname + "/views/monitor.html");
-});
-app.get('/home', (req, res) => {
-    res.sendFile(__dirname + "/views/home.html");
-});
+app.use(rotas);
+
 app.listen(3000, () => console.log("Bem-vindos a InfoDevs"));
