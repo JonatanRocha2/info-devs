@@ -1,7 +1,7 @@
 const indexController = {
 
     exibirHome: (req, res) => {
-      res.render("src/views/home");
+      res.render("home");
     },
   
     redirectHome: (req, res) => {
@@ -9,47 +9,47 @@ const indexController = {
     },
   
     exibirCategoria: (req, res) => {
-      res.render("src/views/categoria");
+      res.render("categoria");
     },
   
     exibirCarrinho: (req, res) => {
-        res.render("src/views/carrinho");
+        res.render("carrinho");
     },
 
     exibirProdutos: (req, res) => {
-        res.render("src/views/produtos");
+        res.render("produtos");
     },
 
     exibirLogin: (req, res) => {
-      res.render("src/views/login");
+      res.render("login");
     },
 
     exibirUsuario: (req, res) => {
-    res.render("src/views/Usuario");
+    res.render("usuario");
     },
 
     exibirFinalizacaoCompra: (req, res) => {
-        res.render("src/views/finalizacaoCompra");
+        res.render("finalizacaoCompra");
     },
 
     exibirConectores: (req, res) => {
-      res.render("src/views/conectores");
+      res.render("conectores");
     },
 
     exibirSmartphone: (req, res) => {
-      res.render("src/views/smartphone");
+      res.render("smartphone");
     },
 
     exibirComputador: (req, res) => {
-      res.render("src/views/computador");
+      res.render("computador");
    },
 
     exibirImpressora: (req, res) => {
-      res.render("src/views/impressora");
+      res.render("impressora");
    },
 
     exibirMonitor: (req, res) => {
-      res.render("src/views/monitor");
+      res.render("monitor");
    },
     
   };

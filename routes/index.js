@@ -5,31 +5,31 @@ const routes = express.Router();
 
 const indexController = require("../controllers/index");
 
-routes.get("/", indexController.redirectHome);
+routes.get("/", indexController.exibirHome);
 
-routes.get("../src/views/home", indexController.exibirtHome);
+routes.get("/home", indexController.redirectHome);
 
-routes.get("../src/views/categoria", indexController.exibirCategoria);
+routes.get("/categoria", indexController.exibirCategoria);
 
-routes.get("../src/views/carrinho", indexController.exibirCarrinho);
+routes.get("/carrinho", indexController.exibirCarrinho);
 
-routes.get("../src/views/produtos", indexController.exibirProdutos);
+routes.get("/produtos", indexController.exibirProdutos);
 
-routes.get("../src/views/login", indexController.exibirLogin);
+routes.get("/login", indexController.exibirLogin);
 
-routes.get("../src/views/usuario", indexController.exibirUsuario);
+routes.get("/usuario", indexController.exibirUsuario);
 
-routes.get("../src/views/finalizacaoCompra", indexController.exibirfinalizacaoCompra);
+routes.get("/finalizacaoCompra", indexController.exibirFinalizacaoCompra);
 
-routes.get("../src/views/conectores", indexController.exibirConectores);
+routes.get("/conectores", indexController.exibirConectores);
 
-routes.get("../src/views/smartphone", indexController.exibirSmartphone);
+routes.get("/smartphone", indexController.exibirSmartphone);
 
-routes.get("../src/views/computador", indexController.exibirComputador);
+routes.get("/computador", indexController.exibirComputador);
 
-routes.get("../src/views/impressora", indexController.exibirImpressora);
+routes.get("/impressora", indexController.exibirImpressora);
 
-routes.get("../src/views/monitor", indexController.exibirMonitor);
+routes.get("/monitor", indexController.exibirMonitor);
 
 module.exports = routes;
 
